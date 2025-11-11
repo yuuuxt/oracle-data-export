@@ -1,0 +1,24 @@
+[project]
+name = "oracle-data-export"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "xiaotian.yu", email = "xiaotian.yu@genre.com" }]
+requires-python = ">=3.13"
+dependencies = [
+    "loguru>=0.7.3",
+    "oracledb==3.4.0",
+    "pyarrow==22.0.0",
+    "pyarrow-stubs==20.0.0.20251107",
+    "python-dotenv==1.2.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.8,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+index-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+
+[dependency-groups]
+dev = ["ipykernel==7.1.0"]
